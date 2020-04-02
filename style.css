@@ -1,0 +1,122 @@
+body {
+    background: white;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.iphone {
+    height: 600px;
+    width: 300px;
+    border: 1px solid #000;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    border-radius: 35px;
+    box-shadow: 5px 5px 0 0 #606060;
+}
+
+.iphone1 {
+    height: 600px;
+    width: 300px;
+    border: 1px solid #000;
+    position: relative;
+    top: 50px;
+    margin: auto;
+    border-radius: 35px;
+    box-shadow: 5px 5px 0 0 #606060;
+}
+
+.powerbutton {
+    position: absolute;
+    height: 17px;
+    width: 40px;
+    border-radius: 5px;
+    right: 35px;
+    top: -5px;
+    border: none;
+    border-top: 5px solid #000;
+
+}
+
+.speakergrill {
+    position: absolute;
+    height: 70px;
+    width: 50px;
+    top: -15px;
+    left: 42%;
+    border: none;
+    border-bottom: 7px inset #000;
+    padding: 0;
+    border-radius: 5px;
+
+}
+
+.frontcam {
+    height: 3px;
+    width: 3px;
+    border: 5px solid #000;
+    margin: auto;
+    position: relative;
+    top: 45px;
+    border-radius: 100%;
+}
+
+.screen {
+    position: absolute;
+    border: 1px solid #000;
+    height: 420px;
+    width: 280px;
+    margin: auto;
+    top: 90px;
+    left: 9.5px;
+    border-radius: 5px;
+}
+
+.screen2 {
+    position: absolute;
+    border: 1px solid #000;
+    height: 420px;
+    width: 280px;
+    margin: auto;
+    top: 90px;
+    left: 9.5px;
+    background: #000;
+    border-radius: 5px;
+}
+
+.iframe {
+    position: relative;
+    bottom: 90px;
+    right: 100px;
+    border: 1px solid #000;
+    height: 420px;
+    width: 280px;
+    margin: auto;
+    top: 90px;
+    left: 9.5px;
+    border-radius: 5px;
+}
+
+.homebutton {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    border: 3px solid #666;
+    top: 430px;
+    border-radius: 100%;
+    box-shadow: 2px 2px 0 0 #666;
+}
+
+.text3 {
+    position: absolute;
+    height: 420px;
+    width: 280px;
+    margin: auto;
+    top: 150px;
+    left: 20.5px;
+}
