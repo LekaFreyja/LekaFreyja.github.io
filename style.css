@@ -1,14 +1,5 @@
-body {
-    background: white;
-}
-
-h1 {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-}
-
 .iphone {
+    background-color: white;
     height: 600px;
     width: 300px;
     border: 1px solid #000;
@@ -112,11 +103,88 @@ h1 {
     box-shadow: 2px 2px 0 0 #666;
 }
 
-.text3 {
+.navbar {
     position: absolute;
-    height: 420px;
-    width: 280px;
-    margin: auto;
-    top: 150px;
-    left: 20.5px;
+    width: 1200px;
+    height: 36px;
+}
+
+.navbar ul {
+    list-style: none;
+    position: relative;
+    margin: 0;
+	padding: 0;
+}
+
+.navbar li {
+    float: left;
+	position: relative;
+    width:auto;
+    margin: 0;
+	padding: 0;
+}
+
+#a {
+	color: #FFFFFF;
+	display: block;
+    font: bold 12px/20px sans-serif;
+    padding: 8px 20px;	
+    text-align: center;
+	text-decoration: none;
+}
+
+#a:hover { background: rgb(232,95,76); box-shadow: 2px 2px 1px 2px rgb(51, 49, 49); }
+#a:active { background: rgb(152,15,0); box-shadow: 2px 2px 1px 2px rgb(51, 49, 49); }
+
+.bodybox {
+    background-color: #9BBB5C;
+    position: absolute;
+    width: 1200px;
+    height: 450px;
+    margin-top: 80px;
+    left: 300px;
+}
+
+.navbox {
+    background-color: rgb(123, 131, 109);
+    position: absolute;
+    width: 1200px;
+    height: 1200px;
+    margin-top: 530px;
+    left: 300px;
+}
+
+.form {
+    margin-top: 80px;
+    margin-left: 520px;
+}
+#reg {
+    font-size: 36px;
+    margin-left: 510px;
+}
+
+.form input {
+    font-weight: bold;
+    color: black;
+    border-style: solid;
+    border-color:black;
+    border-width: 1px;
+    width: 170px;
+}
+.footer {
+    position: absolute;
+    margin-top: 1750px;
+    margin-left: 730px;
+}
+
+.ph {
+    float: left;
+    margin-left: 75px;
+}
+
+.details {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 15px;
+    color: red;
 }
