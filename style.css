@@ -10,20 +10,17 @@ header {
     color: whitesmoke;
     height: 70vh;
 }
-
 nav {
     font-size: large;
     background-color: #222;
     display: flex;
     justify-content: flex-end;
 }
-
 .anchor {
     color: whitesmoke;
     text-decoration: none;
     padding: 2%;
 }
-
 .anchor:hover {
     background-color: #555;
 }
