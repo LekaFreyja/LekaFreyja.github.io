@@ -48,8 +48,6 @@ nav {
 }
 
 .photo {
-    max-width: 343px;
-    max-height: 343px;
     border: 8px solid #008ecf;
     border-radius: 50%;
 }
