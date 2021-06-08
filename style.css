@@ -1,190 +1,101 @@
-.iphone {
-    background-color: white;
-    height: 600px;
-    width: 300px;
-    border: 1px solid #000;
-    position: relative;
-    top: 50px;
-    margin: auto;
-    border-radius: 35px;
-    box-shadow: 5px 5px 0 0 #606060;
-}
-
-.iphone1 {
-    height: 600px;
-    width: 300px;
-    border: 1px solid #000;
-    position: relative;
-    top: 50px;
-    margin: auto;
-    border-radius: 35px;
-    box-shadow: 5px 5px 0 0 #606060;
-}
-
-.powerbutton {
-    position: absolute;
-    height: 17px;
-    width: 40px;
-    border-radius: 5px;
-    right: 35px;
-    top: -5px;
-    border: none;
-    border-top: 5px solid #000;
-
-}
-
-.speakergrill {
-    position: absolute;
-    height: 70px;
-    width: 50px;
-    top: -15px;
-    left: 42%;
-    border: none;
-    border-bottom: 7px inset #000;
-    padding: 0;
-    border-radius: 5px;
-
-}
-
-.frontcam {
-    height: 3px;
-    width: 3px;
-    border: 5px solid #000;
-    margin: auto;
-    position: relative;
-    top: 45px;
-    border-radius: 100%;
-}
-
-.screen {
-    position: absolute;
-    border: 1px solid #000;
-    height: 420px;
-    width: 280px;
-    margin: auto;
-    top: 90px;
-    left: 9.5px;
-    border-radius: 5px;
-}
-
-.screen2 {
-    position: absolute;
-    border: 1px solid #000;
-    height: 420px;
-    width: 280px;
-    margin: auto;
-    top: 90px;
-    left: 9.5px;
-    background: #000;
-    border-radius: 5px;
-}
-
-.iframe {
-    position: relative;
-    bottom: 90px;
-    right: 100px;
-    border: 1px solid #000;
-    height: 420px;
-    width: 280px;
-    margin: auto;
-    top: 90px;
-    left: 9.5px;
-    border-radius: 5px;
-}
-
-.homebutton {
-    position: relative;
-    height: 50px;
-    width: 50px;
-    margin: auto;
-    border: 3px solid #666;
-    top: 430px;
-    border-radius: 100%;
-    box-shadow: 2px 2px 0 0 #666;
-}
-
-.navbar {
-    position: absolute;
-    width: 1200px;
-    height: 36px;
-}
-
-.navbar ul {
-    list-style: none;
-    position: relative;
+body {
+    font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
-	padding: 0;
+    background-color: whitesmoke;
 }
 
-.navbar li {
-    float: left;
-	position: relative;
-    width:auto;
-    margin: 0;
-	padding: 0;
+header {
+    background-color: #333;
+    background-size: cover;
+    color: whitesmoke;
+    height: 70vh;
 }
 
-#a {
-	color: #FFFFFF;
-	display: block;
-    font: bold 12px/20px sans-serif;
-    padding: 8px 20px;	
+nav {
+    font-size: large;
+    background-color: #222;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.anchor {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 2%;
+}
+
+.anchor:hover {
+    background-color: #555;
+}
+
+#main-heading {
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+
+.heading {
     text-align: center;
-	text-decoration: none;
 }
 
-#a:hover { background: rgb(232,95,76); box-shadow: 2px 2px 1px 2px rgb(51, 49, 49); }
-#a:active { background: rgb(152,15,0); box-shadow: 2px 2px 1px 2px rgb(51, 49, 49); }
-
-.bodybox {
-    background-color: #9BBB5C;
-    position: absolute;
-    width: 1200px;
-    height: 450px;
-    margin-top: 80px;
-    left: 300px;
+#about {
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
 }
 
-.navbox {
-    background-color: rgb(123, 131, 109);
-    position: absolute;
-    width: 1200px;
-    height: 1200px;
-    margin-top: 530px;
-    left: 300px;
+.container {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.form {
-    margin-top: 80px;
-    margin-left: 520px;
-}
-#reg {
-    font-size: 36px;
-    margin-left: 510px;
+.photos {
+
 }
 
-.form input {
-    font-weight: bold;
-    color: black;
-    border-style: solid;
-    border-color:black;
-    border-width: 1px;
-    width: 170px;
-}
-.footer {
-    position: absolute;
-    margin-top: 1750px;
-    margin-left: 730px;
+img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.ph {
-    float: left;
-    margin-left: 75px;
+.biography {
+    flex-direction: column;
 }
 
-.details {
-    position: relative;
-    margin-top: 100px;
-    margin-left: 15px;
-    color: red;
+#about-me {
+    text-align: center;
+}
+
+#description {
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.screenshot {
+    margin: 0.5%;
+    padding: 2%;
+    width: 40%;
+    background-color: white;
+    font-size: large;
+    text-align: center;
+}
+
+#contacts {
+    margin: 10vh;
+    text-align: center;
+}
+
+footer {
+    padding: 2vh;
+    background-color: #222;
+    color: whitesmoke;
+    text-align: center;
+}
+
+#footer-up {
+    font-size: x-large;
 }

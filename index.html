@@ -1,77 +1,58 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Ззззззззззырььь</title>
-</head>
-<body bgcolor="#DFDDDB">
-            <div class="bodybox">          
-                <header>
-                    <nav class="navbar">
-                        <ul>
-                            <li><a id="a" href="/index.html">Телефоны</a></li>
-                            <li><a id="a" href="/Untitled-1.html">Регистрация</a></li>
-                        </ul>
-                    </nav>
-                </header>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header id="header">
+            <nav>
+                <a href="#about" class="anchor">ABOUT ME</a>
+                <a href="#portfolio" class="anchor">PORTFOLIO</a>
+                <a href="#contacts" class="anchor">CONTACTS</a>
+                <a href="#header" class="anchor">HOME</a>
+            </nav>
+            <h1 id="main-heading">Mark,<br>Front-end developer</h1>
+        </header>
+        <!-- Biography -->
+        <section id="about">
+            <div class="container photos">
+                <img src="images/person.jpg" alt="Photo" class="my-photo">
             </div>
-    <div class="navbox"> 
-        <h1 id="reg">Это 3 телефона</h1>
-        <div class="ph">
-            <div class="iphone">
-                <div class="screen">
-                    <div class="homebutton"></div>
-                </div>
-                <div class="powerbutton"></div>
-                <div class="speakergrill">
-                    <div class="frontcam"></div>
-                </div>
-                <iframe class="screen" src="http://wikipedia.com"></iframe>
+            <div class="container biography">
+                <h3 id="about-me">About me</h3>
+                <p id="description">Hi, I'm Mark. I'm learning to be a front-end developer for 3 months now.
+                    I'm always open to new knowledge and want to apply it in practice.
+                    <br><br><b>Skills: </b> HTML, CSS, JS.</p>
             </div>
-        </div>
-        <div class="ph">
-            <div class="iphone">
-                <div class="powerbutton"></div>
-                <div class="speakergrill">
-                    <div class="frontcam"></div>
+        </section>
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <h2 class="heading">PORTFOLIO</h2>
+            <div class="img-container">
+                <div class="screenshot">
+                    <img src="images/project2.png" alt="Flashcards">
+                    <p>Flashcards</p>
                 </div>
-                <a href="https://vk.com/id67401536" target="_blank">
-                    <img class="screen" src="https://sun9-30.userapi.com/c858332/v858332665/174c36/AiAyU8RmiKo.jpg"
-                        alt="Марат" />
-                <div class="screen">
-                    <div class="homebutton"></div>
-                </div>
-            </div>
-        </div>
-        <div class="ph">
-            <div class="iphone">
-                <div class="screen2">
-                    <div class="homebutton"></div>
-                </div>
-                <details class="details">
-                    <summary>Как жить, если нужно заниматься:</summary>
-                    <ul>
-                        <li>Говном</li>
-                        <li>Дерьмом</li>
-                        <li>Щитом</li>
-                        <li>Коричневым</li>
-                    </ul>
-                </details>
-                <div class="powerbutton"></div>
-                <div class="speakergrill">
-                    <div class="frontcam"></div>
+                <div class="screenshot">
+                    <img src="images/project1.png" alt="Virtual Piano">
+                    <p>Virtual Piano</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <p>
-            <a href="/index.html">Это наши телефоны.</a>
-            <label for="root">  Права принадлежат:</label>
-            <a id="root" href="/Untitled-1.html">Регистрации</a>
-        </p>
-    </footer>
-</body>
-
+        </section>
+        <!-- Contacts -->
+        <section id="contacts">
+            <h2 class="heading">CONTACTS</h2>
+            <p>You can contact me at <a href="example@example.com">example@example.com</a>.</p>
+        </section>
+        <!-- Footer -->
+        <footer>
+            <p id="footer-up">Mark I.</p>
+            <p>2021</p>
+        </footer>
+    </body>
 </html>
