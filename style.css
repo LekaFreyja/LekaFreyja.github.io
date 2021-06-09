@@ -1,9 +1,9 @@
-@media (min-width: 899px) {
+@media (min-device-width: 1081px) {
     .hamburger-menu {
         visibility: hidden;
     }
 }
-@media (max-width: 899px) {
+@media (max-device-width: 1081px) {
     nav {
         visibility: hidden;
     }
@@ -184,7 +184,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: #09263c;
+    background-color: whitesmoke;
 }
 .menu__btn > span::before {
     content: '';
