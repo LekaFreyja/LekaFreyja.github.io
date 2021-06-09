@@ -1,58 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Portfolio</title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!-- Header -->
-        <header id="header">
-            <nav>
-                <a href="#about" class="anchor">ABOUT ME</a>
-                <a href="#portfolio" class="anchor">PORTFOLIO</a>
-                <a href="#contacts" class="anchor">CONTACTS</a>
-                <a href="#header" class="anchor">HOME</a>
-            </nav>
-            <h1 id="main-heading">Mark,<br>Front-end developer</h1>
-        </header>
-        <!-- Biography -->
-        <section id="about">
-            <div class="container photos">
-                <img src="img\MarkPhoto.png" alt="Photo" class="photo">
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Header -->
+<header id="header">
+    <nav>
+        <a href="#about" class="anchor">ABOUT ME</a>
+        <a href="#portfolio" class="anchor">PORTFOLIO</a>
+        <a href="#contacts" class="anchor">CONTACTS</a>
+        <a href="#header" class="anchor">HOME</a>
+        <div>
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="menu__box">
+                    <li><a class="#about" href="#">ABOUT ME</a></li>
+                    <li><a class="#portfolio" href="#">PORTFOLIO</a></li>
+                    <li><a class="#contacts" href="#">CONTACTS</a></li>
+                    <li><a class="#header" href="#">HOME</a></li>
+                </ul>
             </div>
-            <div class="container biography">
-                <h3 id="about-me">About me</h3>
-                <p id="description">Hi, I'm Mark. I'm learning to be a front-end developer for 11 months now.
-                    I'm always open to new knowledge and want to apply it in practice.
-                    <br><br><b>Skills: </b> HTML, CSS, JS.</p>
+        </div>
+    </nav>
+
+    <h1 id="main-heading">Mark,<br>Front-end developer</h1>
+</header>
+<!-- Biography -->
+<section id="about">
+    <div class="container photos">
+        <img src="images/Person.png" alt="Photo" class="photo">
+    </div>
+    <div class="container biography">
+        <h3 id="about-me">About me</h3>
+        <p id="description">Hi, I'm Mark. I'm learning to be a front-end developer for 11 months now.
+            I'm always open to new knowledge and want to apply it in practice.
+            <br><br><b>Skills: </b> HTML, CSS, JS.</p>
+    </div>
+</section>
+<!-- Portfolio -->
+<section id="portfolio">
+    <h2 class="heading">PORTFOLIO</h2>
+    <div class="img-container">
+        <div class="screenshot">
+            <img src="images/project2.png" alt="Flashcards">
+            <div class="window">
+                    <h1>Flashcards</h1>
+                    <p>I did this project when I was studying the frontend on HyperSkill. I created<br>
+                        a web page with flip-down flash cards, learned some HTML basics and<br>
+                        learned that CSS can easily make a beautiful design.</p>
+                    <button class="close-window">Close</button>
             </div>
-        </section>
-        <!-- Portfolio -->
-        <section id="portfolio">
-            <h2 class="heading">PORTFOLIO</h2>
-            <div class="img-container">
-                <div class="screenshot">
-                    <img src="images/project2.png" alt="Flashcards">
-                    <p>Flashcards</p>
-                </div>
-                <div class="screenshot">
-                    <img src="images/project1.png" alt="Virtual Piano">
-                    <p>Virtual Piano</p>
-                </div>
+            <p><button class="open-window">Flashcards</button></p>
+        </div>
+        <div class="screenshot">
+            <img src="images/project1.png" alt="Virtual Piano">
+            <div class="window1">
+                    <h1>Flashcards</h1>
+                    <p>You can see the project at the following link
+                        <a href="https://flashcard.com" title="flashcard">flashcards</a> </p><br>
+                    <p>I did this project when I was studying the frontend on HyperSkill. I created<br>
+                        a web page with flip-down flash cards, learned some HTML basics and<br>
+                        learned that CSS can easily make a beautiful design.</p>
+                    <button class="close-window1">Close</button>
             </div>
-        </section>
-        <!-- Contacts -->
-        <section id="contacts">
-            <h2 class="heading">CONTACTS</h2>
-            <p>You can contact me at <a href="lekafreyja@gmail.com">lekafreyja@gmail.com</a>.</p>
-        </section>
-        <!-- Footer -->
-        <footer>
-            <p id="footer-up">Mark I.</p>
-            <p>2021</p>
-        </footer>
-    </body>
+            <p><button class="open-window1">Flashcards</button></p>
+        </div>
+    </div>
+</section>
+<!-- Contacts -->
+<section id="contacts">
+    <h2 class="heading">CONTACTS</h2>
+    <p>You can contact me at lekafreyja@gmail.com</p>
+</section>
+<!-- Footer -->
+<footer>
+    <p id="footer-up">Mark I.</p>
+    <p>2021</p>
+</footer>
+<script>
+    let popup = document.querySelector(".window");
+    let popup1 = document.querySelector(".window1");
+
+    let flash = document.querySelector(".open-window");
+    let flash1 = document.querySelector(".open-window1");
+
+    let close = document.querySelector(".close-window");
+    let close1 = document.querySelector(".close-window1");
+
+    flash.onclick = function(){
+        popup.style.display = "block";
+    }
+
+    close.onclick = function(){
+        popup.style.display ="none";
+    }
+
+    flash1.onclick = function(){
+        popup1.style.display = "block";
+    }
+
+    close1.onclick = function(){
+        popup1.style.display ="none";
+    }
+</script>
+</body>
 </html>
