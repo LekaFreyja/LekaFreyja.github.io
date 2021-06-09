@@ -1,4 +1,9 @@
-@media (max-width: 600px) {
+@media (min-width: 899px) {
+    .hamburger-menu {
+        visibility: hidden;
+    }
+}
+@media (max-width: 899px) {
     nav {
         visibility: hidden;
     }
@@ -6,9 +11,7 @@
         visibility: visible;
     }
 }
-.hamburger-menu {
-    visibility: hidden;
-}
+
 body {
     font-family: 'Noto Sans JP', sans-serif;
     margin: 0;
@@ -171,8 +174,8 @@ footer {
     display: flex; /* используем flex для центрирования содержимого */
     align-items: center;  /* центрируем содержимое кнопки */
     position: fixed;
-    width: 26px;
-    height: 26px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     z-index: 1;
 }
