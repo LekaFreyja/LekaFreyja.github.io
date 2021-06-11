@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
 <!-- Header -->
@@ -38,7 +39,7 @@
     </div>
     <div class="container biography">
         <h3 id="about-me">About me</h3>
-        <p id="description">Hi, I'm Mark. I'm learning to be a front-end developer for 11 months now.
+        <p id="description">Hi, I'm Mark. I've been learning to be a front-end developer for 11 months now.
             I'm always open to new knowledge and want to apply it in practice.
             <br><br><b>Skills: </b> HTML, CSS, JS.</p>
     </div>
@@ -49,29 +50,11 @@
     <div class="img-container">
         <div class="screenshot">
             <img src="img/project2.png" alt="Flashcards">
-            <div class="window">
-                    <h1>Flashcards</h1>
-                    <p>I did this project when I was studying the frontend on HyperSkill. I created<br>
-                        a web page with flip-down flash cards, learned some HTML basics and<br>
-                        learned that CSS can easily make a beautiful design.</p>
-                    <button class="close-window">Close</button>
-            </div>
-            <p><button class="open-window">Flashcards</button></p>
         </div>
         <div class="screenshot">
             <img src="img/project1.png" alt="Virtual Piano">
-            <div class="window1">
-                    <h1>Flashcards</h1>
-                    <p>You can see the project at the following link
-                        <a href="https://flashcard.com" title="flashcard">flashcards</a> </p><br>
-                    <p>I did this project when I was studying the frontend on HyperSkill. I created<br>
-                        a web page with flip-down flash cards, learned some HTML basics and<br>
-                        learned that CSS can easily make a beautiful design.</p>
-                    <button class="close-window1">Close</button>
-            </div>
-            <p><button class="open-window1">Flashcards</button></p>
         </div>
-    </div>
+    </div>    
 </section>
 <!-- Contacts -->
 <section id="contacts">
@@ -83,31 +66,5 @@
     <p id="footer-up">Mark I.</p>
     <p>2021</p>
 </footer>
-<script>
-    let popup = document.querySelector(".window");
-    let popup1 = document.querySelector(".window1");
-
-    let flash = document.querySelector(".open-window");
-    let flash1 = document.querySelector(".open-window1");
-
-    let close = document.querySelector(".close-window");
-    let close1 = document.querySelector(".close-window1");
-
-    flash.onclick = function(){
-        popup.style.display = "block";
-    }
-
-    close.onclick = function(){
-        popup.style.display ="none";
-    }
-
-    flash1.onclick = function(){
-        popup1.style.display = "block";
-    }
-
-    close1.onclick = function(){
-        popup1.style.display ="none";
-    }
-</script>
 </body>
 </html>
